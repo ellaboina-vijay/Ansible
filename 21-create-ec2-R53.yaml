@@ -1,7 +1,7 @@
 - name: Create ec2 and R53 Records
   hosts: local
   cnnection: local
-   vars:
+    vars:
      subnet_id: subnet-0fc389268f82a0d6e
      sg_id: sg-02127d3f695b0506e
      ami_id: ami-09c813fb71547fc4f
