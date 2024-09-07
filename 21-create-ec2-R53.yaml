@@ -9,7 +9,7 @@
     - mysql
     - backend
     - frontend
-    zone: sql.devops.online
+    zone: devops81s.online
 
   tasks:
   - name: create ec2 instance
