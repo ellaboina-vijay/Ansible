@@ -38,7 +38,7 @@
       overwrite: true
      
     loop: "{{ ec2_instances.results }}" 
-      
+
 
   - name: create r53 public records
     amazon.aws.route53:
@@ -47,7 +47,7 @@
       record: "{{ zone }}"
       type: A
       ttl: 1
-      Value: "{{ item.Instances[0].public_ip_address }}"
+      value: "{{ item.Instances[0].public_ip_address }}"
       wait: true
       overwrite: true
     loop: "{{ ec2_instances.results }}"   
