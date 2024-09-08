@@ -39,4 +39,7 @@
      
     loop: "{{ ec2_instances.results }}"   
   
- 
+  name: create r53 public records
+   amazon.aws.route53:
+
+    
