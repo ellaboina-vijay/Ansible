@@ -49,7 +49,7 @@
      Value: "{{ item.Instances[0].private_ip_address }}"
      wait; true
      overwrite: true
-  loop: "{{ ec2_instances.results }}"   
-  when: item.item == "frontend"
+    loop: "{{ ec2_instances.results }}"   
+    when: item.item == "frontend"
 
     
