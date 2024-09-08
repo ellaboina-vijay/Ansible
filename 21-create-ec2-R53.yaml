@@ -41,7 +41,7 @@
 
   - name: create r53 public record for frontend
     amazon.aws.route53:
-      state: Present
+      state: present
       zone: "{{ zone }}"
       record: "{{ zone }}"
       type: A
